@@ -1,0 +1,74 @@
+.fullscreen {
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.overlay {
+  z-index:998;
+}
+
+#cameraSelect {
+  z-index:999;
+  position:absolute;
+}
+
+#closeButton {
+  z-index:999;
+  position:absolute;
+  right:0;
+}
+
+.barcode-polygon {
+  fill:rgba(85,240,40,0.5);          
+  stroke:green;
+  stroke-width:1;
+}
+
+.barcode-result {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+}
+
+.barcode-detected {
+  text-align: center;
+}
+
+.barcode-detected h3 {
+  margin: 0 0 10px 0;
+  color: #28a745;
+  font-size: 18px;
+}
+
+.barcode-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin: 10px 0;
+  padding: 10px;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+}
+
+.barcode-detected small {
+  color: #6c757d;
+  font-size: 12px;
+}
+
+#scannerBarcodeResult {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  z-index: 1000;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+}
